@@ -1,10 +1,3 @@
-<!--
- * @Description: 
- * @Author: shuliang
- * @Date: 2022-06-21 15:58:08
- * @LastEditTime: 2022-08-18 14:25:42
- * @LastEditors: shuliang
--->
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
