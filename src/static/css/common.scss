@@ -1,0 +1,88 @@
+
+//左右浮动
+.two_sides {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &>view:nth-child(1),
+    &>text:nth-child(1) {
+      flex: 1;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    &>view:nth-child(2),
+    &>text:nth-child(2) {
+      flex: 1;
+      justify-content: flex-end;
+      text-align: right;
+    }
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+  
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 100%;
+}
+
+view {
+    box-sizing: border-box;
+  }
+  
+  .bg-color-red {
+    background-color: #e93323 !important;
+  }
+  
+  .syspadding {
+    padding-top: var(--status-bar-height);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .uni-scroll-view::-webkit-scrollbar {
+    /* 隐藏滚动条，但依旧具备可以滚动的功能 */
+    display: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+  
+.col-triple,.col-3 {
+    @include make-col (33.3333333333%);
+}
+  
+.col-double,.col-2 {
+    @include make-col(50%);
+}
+  
+.col-4{
+    @include make-col(25%);
+}
+
+.col-5{
+    @include make-col(20%);
+}
