@@ -104,25 +104,15 @@ const goResetPsw = () => {
   })
 }
 const bind = () => {
-  // let params: ILoginParams = {
-  //   page: 1,
-  //   pageSize: 20,
-  // }
-  // signIn(params).then((res) => {
-  //   useUserInfo().setUserInfos(res.data as ILogin)
-  //   useUserInfo().setToken('12345678909')
-  //   goHome()
-  // })
-
-  let loginOb = new login()
-  loginOb
-    .doLogin(usernameOrPhone.value, password.value)
-    .then((result: any) => {
-      goHome()
-    })
-    .catch((error) => {
-      console.log(error)
-    })
+  // let loginOb = new login()
+  // loginOb
+  //   .doLogin(usernameOrPhone.value, password.value)
+  //   .then((result: any) => {
+  //     goHome()
+  //   })
+  //   .catch((error) => {
+  //     console.log(error)
+  //   })
 }
 const goHome = () => {
   uni.navigateTo({
