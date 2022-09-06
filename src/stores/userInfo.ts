@@ -5,7 +5,7 @@ import { UserInfosStates, ILogin } from '@/models/login'
  * 用户信息
  * @methods setUserInfos 设置用户信息
  */
-export const useUserInfo = defineStore('userInfo', {
+const useUserInfo = defineStore('userInfo', {
   state: (): UserInfosStates => ({
     userInfos: uni.getStorageSync('userInfo') || {
       userName: '',
@@ -50,3 +50,4 @@ export const useUserInfo = defineStore('userInfo', {
     },
   },
 })
+export default useUserInfo

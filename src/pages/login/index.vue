@@ -104,15 +104,15 @@ const goResetPsw = () => {
   })
 }
 const bind = () => {
-  // let loginOb = new login()
-  // loginOb
-  //   .doLogin(usernameOrPhone.value, password.value)
-  //   .then((result: any) => {
-  //     goHome()
-  //   })
-  //   .catch((error) => {
-  //     console.log(error)
-  //   })
+  let loginOb = new login()
+  loginOb
+    .doLogin(usernameOrPhone.value, password.value)
+    .then((result: any) => {
+      goHome()
+    })
+    .catch((error) => {
+      console.log(error)
+    })
 }
 const goHome = () => {
   uni.navigateTo({
